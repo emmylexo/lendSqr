@@ -1,7 +1,8 @@
 'use strict';
 
-const { expect } = require('chai');
+const { request, expect } = require('chai');
 let chai = require('chai');
+const { app } = require('../index');
 const chaiHttp = require('chai-http');
 chai.use(chaiHttp);
 
@@ -10,14 +11,14 @@ let firstUser;
 let secondUser;
 let body;
 const firstUserData = {
-    email: 'johnDoe@gmail.com',
+    email: 'j111ohnDoe@gmail.com',
     password: '12345',
     firstName: 'John',
     lastName: 'Doe'
 }
 
 const secondUserData = {
-    email: 'secondUser@gmail.com',
+    email: 's111econdUser@gmail.com',
     password: '12345',
     firstName: 'Second',
     lastName: 'User'
